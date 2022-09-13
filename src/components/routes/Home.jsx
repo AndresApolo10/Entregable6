@@ -25,7 +25,7 @@ const Home = () => {
 
   useEffect(() => {
     const filter = products?.filter(e => {
-      const price = NUmber(e.price)
+      const price = Number(e.price)
       const max = objFilterPrice.to
       const min = objFilterPrice.from
       if(min && max) {
@@ -43,12 +43,11 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <h3>hola</h3>
-      <h3>hola</h3>
-      <h3>hola</h3>
       <InputSearch setInputSearch={setInputSearch} />
+      <div className='home-filter'>
       <CategoryFilter />
       <PriceFilter setObjFilterPrice={setObjFilterPrice}/>
+      </div>
       <div className='home__container-card'>
         {
           filterProducts ?

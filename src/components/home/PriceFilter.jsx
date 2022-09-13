@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/priceFilter.css'
 
 const PriceFilter = ({setObjFilterPrice}) => {
 
@@ -13,18 +14,18 @@ const PriceFilter = ({setObjFilterPrice}) => {
 
     return (
         <form onSubmit={submit}>
-            <h3>Price</h3>
-            <ul>
-                <li>
-                    <label htmlFor="fromPrice">From</label>
-                    <input type="number" id="fromPrice" />
+            <h3 className='content-title'>Price</h3>
+            <ul className='content-ul'>
+                <li className='filter-item'>
+                    <label className='filter-label' htmlFor="fromPrice">From</label>
+                    <input className='filter-input' type="number" id="fromPrice" />
                 </li>
                 <li>
-                    <label htmlFor="toPrice">To</label>
-                    <input type="number" id="toPrice" />
+                    <label className='filter-label' htmlFor="toPrice">To</label>
+                    <input className='filter-input1' type="number" id="toPrice" />
                 </li>
             </ul>
-            <button>Filter Price</button>
+            <button className='filter-btn'>Filter Price</button>
         </form>
     )
 }

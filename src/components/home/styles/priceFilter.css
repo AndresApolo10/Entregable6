@@ -1,0 +1,32 @@
+.filter-input{
+    margin-left: 1em;
+    outline: none;
+    height: 25px;
+    border: 1px solid #ccca;
+    border-radius: 0.5em;
+}
+.filter-label{
+    color: #515151;
+}
+.filter-input1{
+    margin-left: 2.55em;
+    outline: none;
+    height: 25px;
+    border: 1px solid #ccca;
+    border-radius: 0.5em;
+}
+.filter-item{
+    padding: 0.2em 0;
+    margin-bottom: 0.5em;
+}
+.filter-btn{
+    margin-top: 1em;
+    margin-left: 1em;
+    border: none;
+    width: 100px;
+    height: 25px;
+    background-color: var(--color-red);
+    color: #fff;
+    border-radius: 0.5em;
+    cursor: pointer;
+}

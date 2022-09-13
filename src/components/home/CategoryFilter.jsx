@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { getAllProducts, getProductByCategory } from '../../store/slices/products.slice'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
+import './styles/categoryFilter.css'
 
 const CategoryFilter = () => {
 
@@ -26,13 +27,13 @@ const CategoryFilter = () => {
   }
 
   return (
-    <div>
-        <h3>Category</h3>
-        <ul>
-            <li onClick={handleClickAllProducts}>All Products</li>
+    <div className='content-category'>
+        <h3 className='content-title'>Category</h3>
+        <ul className='content-ul'>
+            <li className='content-item' onClick={handleClickAllProducts}>All Products</li>
             {
              categories?.map(category => (
-                <li onClick={() => handleClickCategory(category.id)} key={category.id}>{category.name}</li>
+                <li className='content-item' onClick={() => handleClickCategory(category.id)} key={category.id}>{category.name}</li>
              ))   
             }
         </ul>
